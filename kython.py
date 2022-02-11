@@ -67,6 +67,10 @@ class Lexer:
 				tokens.append(Token(TT_DIV))
 				self.advance()
 
+			elif self.current_char == ".":
+				tokens.append(Token(TT_FLOAT))
+				self.advance()
+
 			elif self.current_char == "(":
 				tokens.append(Token(TT_LPAREN))
 				self.advance()
