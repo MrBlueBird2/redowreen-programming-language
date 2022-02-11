@@ -22,7 +22,7 @@ class IllegalCharEror(Error):
 		super().__init__('Illegal Character', details)
 
 class Token:
-	def __init__(self, type, value=None):
+	def __init__(self, type_, value=None):
 		self.type = type_
 		self.value = value
 
