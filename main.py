@@ -4,6 +4,6 @@ while True:
 	text = input('Comthon > ')
 	l = []
 	if "+" in text:
-		text.replace("+", "")
+		text = text.replace("+", "")
 		splitted_text = text.split()
-		print(l)
+		print(text)
