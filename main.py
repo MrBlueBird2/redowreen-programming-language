@@ -36,3 +36,11 @@ while True:
 			default = int(text[i])
 			ans += answer
 		print(ans)
+	elif '//' in text:
+		text = text.replace("//", " ")
+		text = text.split()
+		print(int(text[0]) // int(text[1]))
+	elif '/' in text:
+		text = text.replace("/", " ")
+		text = text.split()
+		print(int(text[0]) / int(text[1]))
